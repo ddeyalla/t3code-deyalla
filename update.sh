@@ -11,5 +11,6 @@ fi
 git pull --no-rebase origin main
 git pull --no-rebase --no-edit upstream main
 git push origin main
-corepack pnpm install
+. "$HOME/.nvm/nvm.sh" && nvm use 26.12.1 >/dev/null
+pnpm install
 echo "Up to date with your fork and t3code."
